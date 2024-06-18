@@ -42,12 +42,13 @@ body {
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    //grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 
     @media (max-width: 1400px) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
+      justify-content: center;
     }
   }
 
@@ -55,6 +56,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 1360px) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
   }
 }
 

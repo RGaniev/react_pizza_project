@@ -1,4 +1,4 @@
-@import "variables";
+@import "../variables";
 
 .sort {
   position: relative;
@@ -18,6 +18,10 @@
       color: $orange;
       border-bottom: 1px dashed $orange;
       cursor: pointer;
+    }
+
+    @media (max-width: 1360px) {
+      margin-top: 35px;
     }
   }
 
