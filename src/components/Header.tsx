@@ -29,7 +29,7 @@ function Header() {
         <Link to="/">
           <div className="header__logo">
             <img width="38" src={logo} alt="Pizza logo" />
-            <div>
+            <div className="header__logo-info">
               <h1>React Pizza</h1>
               <p>самая вкусная пицца во вселенной</p>
             </div>
@@ -39,7 +39,7 @@ function Header() {
         <div className="header__cart">
           {path !== "/cart" && (
             <Link to="/cart" className="button button--cart">
-              <span>{totalPrice} ₽</span>
+              <span className="header__cart--price">{totalPrice} ₽</span>
               <div className="button__delimiter"></div>
               <svg
                 width="18"
